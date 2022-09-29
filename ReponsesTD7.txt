@@ -18,4 +18,4 @@ class SqlFormatter
 
 9) L'erreur peut venir du namespace de la classe Utils ou tout simplement que le fichier n'est pas dans ce repertoire voir meme qu'il n'existe pas
 
-10) Il faut changer tous les require_once sauf s'il y a un au
+10) Il faut changer le nom de tous les require_once ou modifier l'autoloader en changeant le nom du fichier et le namespace par lib/... au lieu de src/...
