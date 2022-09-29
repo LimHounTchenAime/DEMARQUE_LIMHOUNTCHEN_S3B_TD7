@@ -1,11 +1,21 @@
-1) La classe Logger est définie dans le fichier monolog/src/Monolog/Logger.php 
+1) La classe Logger est définie dans le fichier monolog/src/Monolog/Logger.php
 Son namespace est : namespace Monolog\
+
+2) Les classes ErrorHandler et Registry gèrent les exceptions et sont donc définies dans "\Monolog\Handler"
 
 3) namespace Monolog\Handler
 
+4) "src/Monolog/Processor/HostnameProcessor"
+
 5) \monolog\src\Monolog\Handler\Slack\SlackRecord
 
+6) Il faut mettre la classe JsonFormatter dans "src/Monolog/Formatter"
+
 7) namespace Monolog\Formatter\sql
-class SqlFormatter 
+class SqlFormatter
+
+8) Il faudra modifier le namespace de ce fichier en "\Monolog\Handler\ErrorHandler" sinon il ne trouvera pas la classe
 
 9) L'erreur peut venir du namespace de la classe Utils ou tout simplement que le fichier n'est pas dans ce repertoire voir meme qu'il n'existe pas
+
+10) Il faut changer tous les require_once sauf s'il y a un au
