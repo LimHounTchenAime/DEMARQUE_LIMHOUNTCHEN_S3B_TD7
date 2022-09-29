@@ -1,12 +1,12 @@
 <?php
 
 	require_once 'vendor/autoload.php';
-	use src\audio\track\AlbumTrack as AlbumTrack;
-	use src\audio\liste\Playlist as Playlist;
-	use src\render\AudioListRenderer as AudioListRenderer;
-	use src\exception\NonEditablePropertyException as NonEditablePropertyException;
-	use src\exception\InvalidPropertyNameException as InvalidPropertyNameException;
-	use src\exception\InvalidPropertyValueException as InvalidPropertyValueException;
+	use iutnc\deefy\audio\track\AlbumTrack as AlbumTrack;
+	use iutnc\deefy\audio\liste\Playlist as Playlist;
+	use iutnc\deefy\render\AudioListRenderer as AudioListRenderer;
+	use iutnc\deefy\exception\NonEditablePropertyException as NonEditablePropertyException;
+	use iutnc\deefy\exception\InvalidPropertyNameException as InvalidPropertyNameException;
+	use iutnc\deefy\exception\InvalidPropertyValueException as InvalidPropertyValueException;
 	
 	$track1 = new AlbumTrack('Take Control','take_control.mp4');
 	$track2 = new AlbumTrack('Trough the fire and flames', 'through_the_fire_and_flames.mp4');

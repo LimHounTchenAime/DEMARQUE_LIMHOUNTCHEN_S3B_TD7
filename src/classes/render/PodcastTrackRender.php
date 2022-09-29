@@ -1,6 +1,6 @@
 <?php
 
-namespace src\render;
+namespace iutnc\deefy\render;
 	//require_once 'AudioRender.php';
 	class PodcastTrackRender extends AudioTrackRender
 	{

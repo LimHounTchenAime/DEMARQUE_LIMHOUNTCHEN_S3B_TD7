@@ -1,6 +1,6 @@
 <?php
 
-	namespace src\render;
+	namespace iutnc\deefy\render;
 //	require_once 'Renderer.php';
 abstract class AudioTrackRender implements Renderer
 {

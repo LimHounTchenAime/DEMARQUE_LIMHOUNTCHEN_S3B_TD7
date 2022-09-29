@@ -1,5 +1,5 @@
 <?php
-namespace src\render;
+namespace iutnc\deefy\render;
 	Interface Renderer {
 		public function short():String;
 	}

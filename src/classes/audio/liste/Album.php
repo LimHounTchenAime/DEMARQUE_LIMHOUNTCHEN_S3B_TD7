@@ -1,5 +1,5 @@
 <?php
-namespace src\audio\liste;
+namespace iutnc\deefy\audio\liste;
 class Album extends AudioList {
 		String $artiste,$datesortie;
 

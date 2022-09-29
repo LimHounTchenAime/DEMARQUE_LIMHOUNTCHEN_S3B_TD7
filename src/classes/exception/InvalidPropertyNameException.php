@@ -1,8 +1,8 @@
 <?php
-namespace src\exception;
+namespace iutnc\deefy\exception;
 use Exception as Exception;
 
-class InvalidPropertyValueException extends Exception {
+class InvalidPropertyNameException extends Exception {
 		public function __construct($message, $code = 0, Throwable $prev = null){
 			parent::__construct($message,$code,$prev);
 		}
@@ -11,4 +11,5 @@ class InvalidPropertyValueException extends Exception {
 		   return __CLASS__ . ": [{$this->code}]: {$this->message}\n";
 		}
 	}
+
 ?>

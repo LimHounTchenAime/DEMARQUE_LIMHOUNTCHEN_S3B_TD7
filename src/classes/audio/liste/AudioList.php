@@ -1,6 +1,6 @@
 <?php
 
-	namespace src\audio\liste;
+	namespace iutnc\deefy\audio\liste;
 	
 	class AudioList {
 		protected string $nom;

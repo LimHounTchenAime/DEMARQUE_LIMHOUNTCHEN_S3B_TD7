@@ -1,5 +1,5 @@
 <?php
-namespace src\audio\liste;
+namespace iutnc\deefy\audio\liste;
 class Playlist extends AudioList {
 
 		public function __construct(String $n, $t = []){

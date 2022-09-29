@@ -1,5 +1,5 @@
 <?php
-namespace src\exception;
+namespace iutnc\deefy\exception;
 use Exception as Exception;
 
 class NonEditablePropertyException extends Exception{

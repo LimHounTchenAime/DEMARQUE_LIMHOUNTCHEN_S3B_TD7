@@ -1,5 +1,5 @@
 <?php
-namespace src\audio\track;
+namespace iutnc\deefy\audio\track;
 	require_once 'AudioTrack.php';
 	
 	

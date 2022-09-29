@@ -1,10 +1,10 @@
 <?php
-	namespace src\audio\track;
-	use src\exception\InvalidPropertyNameException as InvalidPropertyNameException;
-	use src\exception\NonEditablePropertyException as NonEditablePropertyException;
-	use src\exception\InvalidPropertyValueException as InvalidPropertyValueException;
+	namespace iutnc\deefy\audio\track;
+	use iutnc\deefy\exception\InvalidPropertyNameException as InvalidPropertyNameException;
+	use iutnc\deefy\exception\NonEditablePropertyException as NonEditablePropertyException;
+	use iutnc\deefy\exception\InvalidPropertyValueException as InvalidPropertyValueException;
 
-	abstract class AudioTrack {
+	class AudioTrack {
 		protected string $titre;
 		protected int $annee = 0;
 		protected string $genre = "";

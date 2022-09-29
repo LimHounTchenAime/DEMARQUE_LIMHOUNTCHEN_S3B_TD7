@@ -1,6 +1,6 @@
 <?php
-	namespace src\render;
-	use src\audio\liste\AudioList as AudioList;
+	namespace iutnc\deefy\render;
+	use iutnc\deefy\audio\liste\AudioList as AudioList;
 	class AudioListRenderer implements Renderer {
 		private AudioList $al;
 
