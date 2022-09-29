@@ -1,20 +1,11 @@
 1) La classe Logger est définie dans le fichier monolog/src/Monolog/Logger.php 
-Son namespace est : namespace Monolog
+Son namespace est : namespace Monolog\
 
-2)
+3) namespace Monolog\Handler
 
-3)
+5) \monolog\src\Monolog\Handler\Slack\SlackRecord
 
-4)
+7) namespace Monolog\Formatter\sql
+class SqlFormatter 
 
-5)
-
-6)
-
-7)
-
-8)
-
-9)
-
-10)
+9) L'erreur peut venir du namespace de la classe Utils ou tout simplement que le fichier n'est pas dans ce repertoire voir meme qu'il n'existe pas
