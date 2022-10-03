@@ -30,8 +30,9 @@
 			if($atr === "titre" || $atr === "fichier"){
 			throw new NonEditablePropertyException("Non Editable Property : $atr");
 			}
-			if(gettype($this->atr)!=gettype($value)){
-				throw new InvalidPropertyValueException("Invalid Property Value : $value");
+			if(gettype($this->$atr)!=gettype($value)){
+				throw new InvalidPropertyValueException("Invalid Property Value : $value For Property : $atr (".
+					gettype($this->$atr).")");
 			}	
 			$this->$atr = $value;
 		}
