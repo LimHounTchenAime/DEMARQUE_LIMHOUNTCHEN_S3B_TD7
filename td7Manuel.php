@@ -1,6 +1,9 @@
 <?php
 
 	require_once 'src/loader/Prs4ClassLoader.php';
+	$loader = new src/loader/Psr4ClassLoader("iutnc\\deefy\\","src/classes");
+	$loader->loadClass();
+	
 	use iutnc\deefy\audio\track\AlbumTrack as AlbumTrack;
 	use iutnc\deefy\audio\liste\Playlist as Playlist;
 	use iutnc\deefy\render\AudioListRenderer as AudioListRenderer;
