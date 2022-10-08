@@ -1,17 +1,18 @@
 <?php
 
-	require_once('src/loader/Prs4ClassLoader.php');
-	$loader = new src/loader/Psr4ClassLoader("iutnc\\deefy\\","src/classes");
-	$loader->loadClass();
-	
+	require_once 'src/loader/Psr4ClassLoader.php';
+
+	//$loader = new \src\loader\Psr4ClassLoader("iutnc\\deefy\\","src/classes");
+    //$loader->loadClass();
+
 	use iutnc\deefy\audio\track\AlbumTrack as AlbumTrack;
 	use iutnc\deefy\audio\liste\Playlist as Playlist;
 	use iutnc\deefy\render\AudioListRenderer as AudioListRenderer;
-	use iutnc\deefy\render\AlbumTrackRender as AlbumTrackRender
+	use iutnc\deefy\render\AlbumTrackRender as AlbumTrackRender;
 	use iutnc\deefy\exception\NonEditablePropertyException as NonEditablePropertyException;
 	use iutnc\deefy\exception\InvalidPropertyNameException as InvalidPropertyNameException;
 	use iutnc\deefy\exception\InvalidPropertyValueException as InvalidPropertyValueException;
-	
+
 	$track1 = new AlbumTrack('Take Control','take_control.mp4');
 	$track2 = new AlbumTrack('Trough the fire and flames', 'through_the_fire_and_flames.mp4');
 
@@ -38,7 +39,7 @@
 	$r->render();
 
 	
-	$re = new AlbumTrackRender($track1));
+	$re = new AlbumTrackRender($track1);
 	echo $re->render();
 	
 	

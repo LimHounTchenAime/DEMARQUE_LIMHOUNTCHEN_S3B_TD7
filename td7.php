@@ -34,7 +34,7 @@
 	$r = new AudioListRenderer($audio);
 	$r->render();
 
-	$re = new AlbumTrackRender($track1));
+	$re = new AlbumTrackRender($track1);
 	echo $re->render();
 	
 	
