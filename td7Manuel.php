@@ -2,7 +2,7 @@
 
 	require_once 'src/loader/Psr4ClassLoader.php';
 
-	//$loader = new \src\loader\Psr4ClassLoader("iutnc\\deefy\\","src/classes");
+	$loader = new \src\loader\Psr4ClassLoader("iutnc\\deefy\\","src/classes");
     //$loader->loadClass();
 
 	use iutnc\deefy\audio\track\AlbumTrack as AlbumTrack;

@@ -1,6 +1,6 @@
 <?php
 
-namespace iutnc\deefy\loader;
+namespace src\loader;
 
 class Psr4ClassLoader{
 
@@ -10,7 +10,7 @@ class Psr4ClassLoader{
 
     function loadClass($classname){
         $filename=str_replace('\\', DIRECTORY_SEPARATOR, $classname).'.php';
-        print $filename;
+        //print $filename;
         if (is_file($filename))
             require_once "Psr4ClassLoader.php";
     }
