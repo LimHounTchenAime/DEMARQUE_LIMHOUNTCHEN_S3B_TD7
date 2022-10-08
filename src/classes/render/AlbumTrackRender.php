@@ -1,13 +1,15 @@
 <?php
 
 namespace iutnc\deefy\render;
+use iutnc\deefy\render\AudioRender as AudioRender;
+use iutnc\deefy\audio\track\AlbumTrack as AlbumTrack;
 //require_once 'AudioRender.php';
-class AlbumTrackRenderer extends AudioTrackRender
+class AlbumTrackRender extends AudioRender
 {
 
 	function __construct(AlbumTrack $at)
 	{
-		parent::__construct($at);	
+		parent::__construct($at);
 	}
 
 	public function long() : string {
@@ -19,16 +21,13 @@ class AlbumTrackRenderer extends AudioTrackRender
 				"<p><audio controls src='{$this->track->fichier}'></p></div>";
 	}
 
-	public function render(int $selector) : string {
+	public function render(int $selector=0) : string {
 		switch ($selector) {
-			case 1:
+			default:
 				return $this->short();
 				break;
 			case 2:
 				return $this->long();
-				break;
-			default:
-				return "";
 				break;
 		}
 	}

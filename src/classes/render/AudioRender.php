@@ -1,8 +1,9 @@
 <?php
 
 	namespace iutnc\deefy\render;
-//	require_once 'Renderer.php';
-abstract class AudioTrackRender implements Renderer
+	use iutnc\deefy\audio\track\AudioTrack as AudioTrack;
+	use iutnc\deefy\render\Renderer as Renderer;
+abstract class AudioRender implements Renderer
 {
 	public AudioTrack $track;
 
