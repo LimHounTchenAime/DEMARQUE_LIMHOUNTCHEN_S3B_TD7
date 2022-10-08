@@ -1,6 +1,6 @@
 <?php
 namespace iutnc\deefy\audio\track;
-	require_once 'AudioTrack.php';
+	use iutnc\deefy\audio\track\AudioTrack as AudioTrack;
 	
 	
 	class PodcastTrack extends AudioTrack {
